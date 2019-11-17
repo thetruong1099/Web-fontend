@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700");
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+.clear-fix::after{
+    clear: both;
+    display: block;
+}
+body{
+    background: url("icon/bg.png");
+    background-repeat: no-repeat;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-size: 16px;
+    color: #00b1ff;
+}
+
+
+/* CSS - Header*/
+header{
+    background-image: linear-gradient(to right, #11273e, #102031, #0f1925, #0b1119, #03060b);
+}
+/* CSS - Header - logo*/
+.nav-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* CSS - Header - Home - Mega menu*/
+li{
+    list-style: none;
+    display: inline-block;
+}
+.mega-menu-row{
+    background-image: linear-gradient(to right, #0d1f32, #0d1a29, #0c1621, #091019, #040910);
+    width: 400px;
+}
+.mega-menu-row a{
+    color: #085279;  
+    text-decoration: none;
+}
+.mega-menu-row a:hover{
+    background: #0d1f32;
+    color: #00b1ff;
+}
+/* CSS - Header - Search*/
+.set-search{
+    background: #0d2237;
+    border: 1px solid rgba(18,102,229,0.1);
+    border-radius: 5px;
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+.set-search input{
+    width: 90%;
+    background: rgba(255, 255, 255, 0.0);
+    padding-left: 5px;
+    color: #00b1ff;
+}
+/* CSS - Header - Download - Account - Shopcard*/
+.nav-bar-right{
+    border: 1px solid rgba(18,102,229,0.1);
+    border-radius: 5px;
+    background: #0D2237;
+    text-align: center;
+    margin-right: -10px;
+    margin-left: -15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: relative;
+    font-size: 15px;
+    position: relative;
+}
+.nav-bar-right a{
+    color: #2ab4f1;
+    text-decoration: none;
+}
+.nav-bar-right-download{
+    background: #00b1ff;
+}
+.number-shop-card{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #FC4242;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+}
+/* CSS - Header - Account - chitietsp -thông tin tài khoản*/
+.nav-bar-right img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.nav-bar-right span{
+    font-size: 13px;
+}
+.my-account{
+    padding:10px ;
+    background-image: linear-gradient(to right bottom, #0f2237, #0e1c2c, #0d1722, #091019, #03070d);
+    position: absolute;
+    bottom: -330px;
+    left: 0;
+    width: 210%;
+    font-size: 16px;
+    display: none;
+}
+.account-info{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+}
+.account-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.account-info span{
+    font-size: 16px;
+}
+.account-function{
+    border-bottom: 1px solid rgba(18,102,229,0.1);
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 8px ;
+    position: relative;
+}
+.account-function-money{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.account-function span{
+    float: right;
+    color: white;
+    font-size: 16px;
+}
+.account-function i{
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+}
+.nav-bar-right:hover .my-account{
+    display: block;
+}
+
+
+/* CSS - content*/
+.content{
+    background-image: linear-gradient(to bottom, rgb(5,25,55,0.0), rgb(5,25,55,0.0),#051937,#051937, #051937, #051937, #051937);
+}
+/* CSS - content - content text*/
+.content-text{
+    color: white;
+    padding-top: 43%;
+    padding-bottom: 15%;
+}
+.content-text p{
+    font-size: 25px;
+}
+.content-text button{
+    background: #00b1ff;
+    color: white;
+    border: 1px solid rgba(18,102,229,0.1);
+    border-radius: 5px;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* CSS - content - content platform*/
+.content-platform{
+    background-image: linear-gradient(to right, #11273e, #102031, #0f1925, #0b1119, #03060b);
+    height: 100px;
+    /*    padding-top: 2.5%;
+    padding-bottom: 2.5%;*/
+    color: #2ab4f1;
+}
+.content-platform h5{
+    padding-top: 25%;
+    margin: 0px -15px 0px;
+    text-align: center;
+}
+.icon-game-store{
+    text-align: center;
+    padding-top: 3%;
+}
+.icon-game-store:hover{
+    background: #07111b;
+    border-bottom: 2px solid rgba(18,102,229,0.1);
+}
+/* CSS - content - main content*/
+.main-content{
+    background-image: linear-gradient(to bottom, #070f19, #0c1622, #0e1b2b, #102134, #11273e);
+    margin-left: -15px;
+    margin-right: -15px;
+}
+/* CSS - content - main content - sort*/
+.sort{
+    position: relative;
+    height: 80px;
+}
+.sort-main{
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    color: white;
+    border: 1px solid rgba(18,102,229,0.1);
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+
+}
+.sort-main-left{
+    background: #123c59;
+    height: 100%;
+    width: 40%;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+}
+.sort-main-right{
+    background: #0d2237;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    padding-top: 5px;
+    float: right;
+    position: relative;
+}
+.sort-main-right i{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    color: #2ab4f1;
+    font-size: 18px;
+}
+/* CSS - content - main content - product*/
+.product{
+    height: 200px;
+    background: url('https://static.gamehub.vn/img/files/2019/11/05/gamehubvn-game-thu-pubg-ha-guc-ten-cuop.jpg');
+    background-size: 100% 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.product-footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+.product-text{
+    margin-left: 10px;
+    float: left;
+}
+.product-text h6{
+    color: white;
+    margin-bottom: 0;
+}
+.product-text p{
+    color: orange;
+    margin-bottom: 0;
+}
+.lineThrough{
+    text-decoration: line-through;
+    font-size: 13px;
+}
+.product-button{
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.product-button i{
+    color: red;
+    font-size: 16px;
+}
+.product-button button{
+    border: 1px solid rgba(18,102,229,0.1);
+    background: rgba(1, 54, 78, 0.8);
+    border-radius: 5px;
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.product-button button:hover{
+    background: #00b1ff;
+}
+.product-sale{
+    border-radius: 5px;
+    width: 45px;
+    height: 25px;
+    background: #ff3b09;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: white;
+    text-align: center;  
+}
+.product-like{
+    background: rgba(12,29,45,0.8);
+    position: absolute;
+    top: -23px;
+    left: -30px;
+    color: white;
+    display: none;
+    height: 20px;
+    width: 140px;
+    font-weight: normal;
+    text-align: center;
+}
+.product-button i:hover .product-like{
+    display: block;
+}
+/* CSS - content - main content - page*/
+.page{
+    color: white;
+    text-align: center;
+    display: flex;
+    padding-left: 38%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.page-number{
+    border: 1px solid rgba(18,102,229,0.1);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    background: #0a5c81;
+    margin-right: 5px;
+    line-height: 1.8;
+}
+.page p{
+    margin-right: 5px;
+}
+.page button{
+    border: 1px solid rgba(18,102,229,0.1);
+    border-radius: 5px;
+    background: #0a5c81;
+    width: 50px;
+    height: 30px;
+    color: white;
+}
+/* CSS - content - main-content - nav-top-rank*/
+.nav-top-rank{
+    background-image: linear-gradient(to right, #0d1e30, #0d1927, #0c141e, #080e16, #03060b);
+    color: #36bffd;
+    font-size: 18px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.nav-top-rank-text{
+    padding-top: 3.3%;
+    padding-bottom: 3%;
+}
+.nav-top-rank-text:hover{
+    background: #07111b;
+    border-bottom: 3px solid #1266E5;
+}
+/* CSS - content - main-content - slider*/
+.slider{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 400px;
+}
+.slider-text{
+    position: absolute;
+    left: 0;
+    text-align: left;
+    margin-left: 7%;
+}
+.icon{
+    background: rgba(84, 90, 99, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.3;
+}
+/* CSS - content - manin-content - show all*/
+.show-all{
+    position: relative;
+    height: 100px;
+    margin-top: 15px;
+    
+}
+.show-all button{
+    color: #36bffd;
+    background: rgba(255, 255, 255, 0.0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* CSS - connect*/
+.connect{
+    position: fixed;
+    top: 70%;
+    right: 0;
+    width: 90px;
+    text-align: center;
+    color: white;
+}
+.connect img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.connect p{
+    margin-bottom: 5px;
+}
+/* CSS - Footer*/
+footer{
+    background: #051937;
+    padding-top: 5%;
+}
+.footer-top{
+    border-bottom: 1px solid rgba(18,102,229,0.1);
+    padding-bottom: 5%;
+}
+.footer-top h5{
+    color: white;
+    margin-bottom: 15px;
+}
+.footer-top a{
+    text-decoration: none;
+    color: #2ab4f1;
+    margin-bottom: 10px;
+}
+.footer-top a i{
+    color: white;
+}
+.icon-connect{
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.footer-copyright{
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
